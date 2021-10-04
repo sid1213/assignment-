@@ -1,0 +1,142 @@
+#head{
+    width:100%;
+    position: sticky;
+    top:0;
+    z-index: 111;
+}
+header{
+    background: #E9E9E9;
+    font-size:1rem;
+    font-family:Oswald;
+    font-weight:500;
+    color: rgba(97, 97, 97, 1);
+}
+#logo{
+    text-align: center;
+    font-family: Glass Antiqua;
+}
+#logo a h1{
+    color:rgba(255, 40, 78, 1);  
+}
+#nav-row a{
+    color: rgba(97, 97, 97, 1);
+}
+#nav-row a:hover,#search button:hover,#menu button:hover{
+    color: rgba(255, 40, 78, 1); 
+    text-decoration: none;
+}
+.menu-text{
+    display: inline-block;
+    margin: 0;
+}
+.fa-shopping-cart{
+    display: none;
+}
+.fa-shopping-cart,#cart,#seacrh button{  
+    float: right;
+} 
+#search button,#menu button{
+    border: none;
+    background:transparent;
+    color: rgba(97, 97, 97, 1)
+}
+.searching{
+    display: none;
+    width: 100%;
+    position:absolute;
+    background: rgba(0, 0, 0, 0.411);
+    z-index: 11111;
+}
+.search-box{
+    margin-top:0.2rem;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    border:0.1rem solid;
+    border-radius:1rem;
+    overflow: hidden;
+}
+.search-box input[type="search"],.search-box button{
+   width: 100%;
+    padding:0;
+    margin:0;
+    border:none;
+    outline: none;
+    padding:0.5rem ;
+   
+}
+
+.search-box button{
+    width: 20%;
+    border-left: inherit;
+    background: rgb(255, 40, 78);
+}
+
+/* main-menu */
+
+.main-menu{
+    display: none;
+    width:100%;
+    max-height:100vh;
+    margin: 0 auto;
+    background: rgba(44, 43, 43, 1);
+    color: white;
+    z-index: 2;
+}
+
+.men span{
+    font-size:4rem;
+    font-family: Italiana;
+    color: rgba(255, 102, 130, 1);
+}
+
+.men h1 {
+    font-size:1.2rem;
+}
+.men ul{
+    margin-bottom:1.5rem;
+}
+.men ul li{
+    display: block;
+    margin: 0.5rem 0;
+}
+.men ul li a {
+    color:white;
+}
+@media screen  and (min-width:0px)and (max-width:768px){
+   header{
+       font-size: 14px;
+   }
+    #menu{
+        order:5;
+    }
+    #menu button{
+        float: right;
+    }
+    #menu .fa-bars{  
+        float: right;
+    }
+    .menu-text{
+        display: none;
+    }
+    #logo {
+        text-align: left;
+    }
+    .fa-shopping-cart{
+        display: inline-block;
+    }
+    #dropdown-1,#dropdown-2,#dropdown-3,#dropdown-4,#dropdown-5,#dropdown-6,#dropdown-7{
+        display:none;
+    }
+    .main-menu span{
+        font-size:3rem;
+    }   
+    .men h1 {
+        font-size:1.5rem;
+    }
+}
+@media screen  and (min-width:769px){
+    .fa-angle-down,.fa-angle-up{
+        display: none;
+    }
+}

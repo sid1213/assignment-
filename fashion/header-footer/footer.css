@@ -1,0 +1,31 @@
+footer{
+    background: rgba(65, 65, 65, 1);
+   text-align: center;
+}
+footer ul{
+    list-style: none;
+}
+footer li a ,footer h1,.footer-links li a i p{
+    color: white;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size:1.05rem;
+    text-decoration: none;
+}
+
+.footer-links li{
+    display: block;
+    margin:0.5rem 0;
+}
+.footer-links li a,.footer-links li a i p,.copy-right{
+    font-size:0.8rem;
+    font-weight:400;
+}
+@media screen  and (min-width:0px)and (max-width:768px){
+    .footer-icon li{
+        display: inline-block;
+        margin:0.5rem 0;
+    }
+ }
+
+

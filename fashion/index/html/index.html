@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Oswald:wght@200&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/header-footer/header.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="/header-footer/footer.css">
+    <title>Fasion</title>
+</head>
+<body>
+    <section id="head"> 
+        <header>
+            <div class="container-xl">
+                <div class="row row-cols-1 align-items-center px-1" id="nav-row">
+                    <div class="col-2" id="menu">
+                    <button class="float-md-leftt" onclick="hide_show()"><i class="fa fa-bars" id="icon-change"> <p class="menu-text" id="close"> MENU</p></i> </button> 
+                    </div>
+                    <div class="col-6" id="logo">
+                      <a href="index.html"><h1>Fashion</h1></a> 
+                    </div>
+                    <div class="col-2" id="search" >
+                     <button class="float-right"onclick="search()"><i class="fa fa-search"> <p class="menu-text mb-0">SEARCH</p></i></button>
+                    </div>
+                    <div class="col-2" id="cart-item" >
+                     <a href="/cart/html/cart.html"><i class="fa fa-shopping-cart"></i><p class="menu-text my-auto" id="cart">CART</p></a>   
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+
+        <div class="searching" id="SEARCH">
+            <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                       <form action="#" class="search-box float-right"> 
+                           <input type="search" name="search" id="" required > 
+                            <button type="submit"><i class="fa fa-search"></i></button>   
+                       </form>
+                  </div>
+                 </div>
+            </div>
+        </div>
+
+        
+        <div class="main-menu mx-auto" id="main-menu">
+            <div class="container-xl ">
+                <div class="row justify-content-around x px-4">
+                    <div class="col-md-3 md-text-center men">
+                        <span>MEN</span>
+                        <h1>Men’s Clothing <i class="fa fa-angle-down float-right" id="angles-7" onclick="show(7)"></i></h1>
+                        <ul class="p-0 md-text-center" id="dropdown-7">
+                            <li><a href="#">Clothing</a> </li>
+                            <li><a href="#">Tshirts & Polos</a> </li>
+                            <li><a href="#">Shirts</a> </li>
+                            <li><a href="#">Jeans</a> </li>
+                            <li><a href="#">Innerwear</a> </li>
+                            
+                        </ul>
+                        <h1>Accessories<i class="fa fa-angle-down float-right" id="angles-6" onclick="show(6)"></i></h1>
+                        <ul class="p-0" id="dropdown-6">
+                            <li><a href="#">Watches</a> </li>
+                            <li><a href="#">Bags & Luggage</a> </li>
+                            <li><a href="#">Sunglasses</a> </li>
+                            <li><a href="#">Jewellery</a> </li>
+                            <li><a href="#">Wallet</a> </li>
+                        </ul>
+                            <h1>Men’s Shoes <i class="fa fa-angle-down float-right" id="angles-5" onclick="show(5)"></i></h1>
+                            <ul class="p-0"id="dropdown-5">
+                                <li><a href="#">Shoes</a> </li>
+                                <li><a href="#"> Sports Shoes</a> </li>
+                                <li><a href="#">Formal Shoes</a> </li>
+                                <li><a href="#">Casual Shoes</a> </li>
+                                </ul>
+                    </div>
+                    <div class="col-md-3 men">
+                        <span>WOMEN</span>
+                        <h1>Women’s Clothing <i class="fa fa-angle-down float-right"id="angles-4" onclick="show(4)"></i></h1>
+                        <ul class="p-0"id="dropdown-4">
+                            <li><a href="#">Clothing</a> </li>
+                            <li><a href="#">Western Wear</a> </li>
+                            <li><a href="#">Ethnic Wear</a> </li>
+                            <li><a href="#">Lingerie & Nightwear</a> </li>
+                            <li><a href="#">Top Brands</a> </li>
+                            
+                        </ul>
+                        <h1>Accessories <i class="fa fa-angle-down float-right" id="angles-3"onclick="show(3)"></i></h1>
+                        <ul class="p-0" id="dropdown-3">
+                            <li><a href="#">Watches</a> </li>
+                            <li><a href="#">Handbags & Clutches</a> </li>
+                            <li><a href="#">Sunglasses</a> </li>
+                            <li><a href="#">Gold & Diamond Jewellery</a> </li>
+                            <li><a href="#">Fashion & Silver Jewellery</a> </li>
+                        </ul>
+                            <h1>Women’s Shoes <i class="fa fa-angle-down float-right" id="angles-2" onclick="show(2)"></i></h1>
+                            <ul class="p-0" id="dropdown-2">
+                                <li><a href="#">Shoes</a> </li>
+                                <li><a href="#">Fashion Sandles</a> </li>
+                                <li><a href="#">Ballerinas</a> </li>
+                                
+                                </ul>
+                                
+                    </div>
+                    <div class="col-md-3 men mb-4">
+                         <span >KIDS </span>
+                         <h1 >Kids clothing <i class="fa fa-angle-down float-right" id="angles-1" onclick="show(1)"></i></h1>
+                        <ul class="p-0 mb-2" id="dropdown-1">
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Shoes</a> </li>
+                            <li><a href="#">School Bags</a> </li>
+                            <li><a href="#">Watches</a> </li>
+                            <li ><a href="#">Kid’s Fashion</a> </li>
+                        </ul> 
+                         
+                    </div>
+                </div>
+            </div></div>     
+     <script>    let i=1,j=1;
+        function search(){
+             i++;
+             if(i%2==0)
+             {
+                 document.getElementById("SEARCH").style.display="block";
+             }
+             else{
+                document.getElementById("SEARCH").style.display="none";
+             }
+        }
+        function hide_show(){
+          j++;
+          if(j%2==0)
+          {
+              document.getElementById("main-menu").style.display="block";
+              document.getElementById("icon-change").className="fa fa-times";
+              document.getElementById("close").innerHTML="CLOSE";
+          }
+          else{
+             document.getElementById("main-menu").style.display="none";
+             document.getElementById("icon-change").className="fa fa-bars";
+             document.getElementById("close").innerHTML="MENU";
+          }
+        }
+        function show(x){
+        
+          let a = document.getElementById("dropdown-"+x);
+          let b = window.getComputedStyle(a).display;
+          let arr=[1,2,3,4,5,6,7];
+          var current_ele=arr.indexOf(x);
+          arr.splice(current_ele,1);
+          console.log(arr);
+           if(b=="none"){  
+             a.style.display="block";
+             document.getElementById("angles-"+x).className="fa fa-angle-up float-right";
+            for (let index =0; index < arr.length; index++) {
+            document.getElementById("dropdown-"+arr[index]).style.display="none";
+            document.getElementById("angles-"+arr[index]).className="fa fa-angle-down  float-right";
+           }
+           } 
+          else
+           {
+              a.style.display="none";
+              document.getElementById("angles-"+x).className="fa fa-angle-down  float-right";
+           }
+        
+           }
+        </script>
+    </section>
+
+<section>
+    <div class="index-main ">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-12 poster-1 my-5">
+                    <a href="#"><img src="../images/toni-hukkanen-jXWWfITDB5o-unsplash 1.png" alt="img" class="poster-img"></a>
+                    <span>MEN'S</span>
+                </div>
+                <div class="col-md-6 poster-2">
+                    <div class="poster-cntnt my-2">
+                       <a href="#"><img src="../images/austin-wade-d2s8NQ6WD24-unsplash 1.png" alt="img" class="poster-img"></a> 
+                       <span>casual</span>
+                    </div>
+                    <div class="poster-cntnt my-2">
+                        <a href="#"><img src="../images/austin-wade-d2s8NQ6WD24-unsplash 1 (2).png" alt="img" class="poster-img"></a> 
+                        <span>Suit</span>
+                     </div>
+                     <div class="poster-cntnt my-2">
+                        <a href="#"><img src="../images/austin-wade-d2s8NQ6WD24-unsplash 1 (3).png" alt="img" class="poster-img"></a> 
+                        <span>Formal</span>
+                     </div>
+                </div>
+                <div class=" col-md-6 poster-3">
+                    <div class="poster-cntnt my-2">
+                        <a href="#"><img src="../images/scott-kelly-h-Bkya1hamI-unsplash 1.png" alt="img" class="poster-img"></a> 
+                        <span>Sneakers</span>
+                     </div>
+                     <div class="poster-cntnt my-2">
+                         <a href="/Accoseries/html/accoseries.html"><img src="../images/oliur-9Huby3g9fN0-unsplash 1.png" alt="img" class="poster-img"></a> 
+                         <span>Accoseries</span>
+                      </div>
+                      
+                </div>
+                <div class="col-12 poster-1 my-5">
+                    <a href="#"><img src="../images/banner.png" alt="img" class="poster-img"></a>
+                    <span class="text-danger">WOMEN"S</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+        <footer class="my-2 p-3">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="p-0">
+                            <li><a href="#">STORE LOCATOR</a></li><br>
+                            <li class="mt-1"><a href="#">DOWNLOAD OUR APP</a></li>
+                            <br>
+                            <li class="mr-1 mt-md-5 mt-2"><a href="#"><i class="fa fa-cc-mastercard fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-visa fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>CUSTOMER SERVICE</h1>
+                        <ul class="footer-links p-0">
+                            <li><a href="#">Contact Us</a></li>
+
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Order and Payment</a></li>
+                            <li><a href="#">Returns</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>LEGAL TERMS AND CONDITIONS</h1>
+                        <ul class="footer-links p-0">
+                            <li><a href="#">Legal Notice</a></li>
+
+                            <li><a href="#">Privacy Policy</a></li>
+                            
+                            <li><a href="#">Cookie Policy</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>FOLLOW US</h1>
+                        <ul class="footer-links footer-icon my-auto  p-0">
+                            <li><a href="#"><i class="fa fa-facebook-square"> <p class="menu-text mb-0"> Facebook</p></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"> <p class="menu-text mb-0"> Instagram</p></i></a></li>
+                               <li><a href="#"><i class="fa fa-youtube-play"> <p class="menu-text mb-0"> Youtube</p></i></a></li>
+                               <li><a href="#"><i class="fa fa-pinterest"> <p class="menu-text mb-0"> Pinterest</p></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter-square"> <p class="menu-text mb-0"> Twitter</p></i></a></li>
+                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr color=" gray">
+            <h1 class="copy-right">© 2017-2021 All Rights Reserved</h1>
+        </footer>
+</section>
+</body> 
+</html>
